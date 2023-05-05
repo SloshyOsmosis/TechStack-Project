@@ -2,8 +2,7 @@
 
 In this readme I will note down anything useful that the reader needs to know!
 
-1. The page editor cant be accessed through the other pages and must be loaded on its own, there is no links to the page editor as this is only a user interface with minimal functionality! The page editor can be found via "index.html"
-    1a. "profile-view.html" is considered the main page.
+1. The page editor cant be accessed through the other pages and must be loaded through creating an account.
 
 2. Images generated in the main page are random. I have used the following links to access the api's:
 
@@ -24,10 +23,10 @@ https://dribbble.com/shots/14965855-Simple-Character-of-Muslim-Girl - Image used
     mysql-connector-python
     flask_wtf
     wtforms
-    
+    email_validator
 
 6. To load the database, you need to right click on the 'tstack_database.sql' file and open with MySQL Workbench. The password you need is '1234554321'
 
 7. GitHub Repository: https://github.com/SloshyOsmosis/TechStack-Project
 
-8. YouTube link showing the journey a user will undertake:
+8. YouTube link showing the journey a user will undertake: https://www.youtube.com/watch?v=xkZzOcx82Wo
