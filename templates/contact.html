@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="/static/style/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="{{url_for('static', filename = 'images/logo2.png')}}">
+  <script src="script.js"></script>
+<title>Home</title>
+</head>
+<body>
+
+<header class="navbar">
+    <a onclick="Main()"><img src="{{url_for('static', filename="images/logo2.png")}}" alt="logo" class="logo"></a>
+    <nav>
+    <ul class="nav_links">
+        <li class="signup_link"><a href="{{url_for('login')}}">Log in</a></li>
+        <li class="signup_link"><a href="{{url_for('signup')}}">Sign up</a></li>
+        <li><a href="{{url_for('search')}}">Search</a></li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <li><a href="{{url_for('main')}}">Home</a></li>
+    </ul>
+    </nav>
+</header>
+
+<div class="contact_header">
+    <h1>Problem?<br> <span style="font-size: 1.2em;color:#8c79b1">Contact </span>
+    <span style="font-size: 1.2em;color:rgb(209, 88, 88) ;">Us!</span></h1>
+</div>
+
+<form class="contact_section">
+    <div class="contact_row">
+        <h2>Full name <span style="font-size: 0.7em;color:red">*</span></h2>
+        <input required>
+    </div>
+    <div class="contact_row">
+        <h2>Email <span style="font-size: 0.7em;color:red">*</span></h2>
+        <input required>
+    </div>
+    <div class="contact_row">
+        <h2>Phone number <span style="font-size: 0.7em;color:red">*</span></h2>
+        <input required>
+    </div>
+    <div class="contact_row1">
+        <h2>What is the problem?</h2>
+        <input required>
+    </div>
+    <div class="contact_button">
+        <button type="submit">Submit</button>
+    </div>
+</form>
+
+<!--Footer Section. Will sit at the bottom of the pages.-->
+<footer class="footer_container2">
+    <div class="footer-img">
+      <img src="{{url_for('static', filename="images/facebook.jpg")}}">
+      <img src="{{url_for('static', filename="images/instagram.png")}}">
+      <img src="{{url_for('static', filename="images/twitter.png")}}">
+      <img src="{{url_for('static', filename="images/youtube.png")}}">
+      </div>
+</footer>
+
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>

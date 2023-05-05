@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="/static/style/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="{{url_for('static', filename = 'images/logo2.png')}}">
+  <script src="script.js"></script>
+  <title>Edit Profile</title>
+</head>
+<body>
+
+  <header class="navbar">
+    <a onclick="Main()"><img src="{{url_for('static', filename="images/logo2.png")}}" alt="logo" class="logo"></a>
+    <nav>
+    <ul class="nav_links">
+        <li class="signup_link"><a href="{{url_for('login')}}">Log out</a></li>
+        <li><a href="{{url_for('search')}}">Search</a></li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <li><a href="{{url_for('main')}}">Home</a></li>
+    </ul>
+    </nav>
+</header>
+
+<article class="profile_viewer">
+    <img src="{{url_for('static', filename = "images/coverimg.jpg")}}" alt="cover image" class="coverimg">
+  <div class="pfp_view">
+    <img src="{{url_for('static', filename = "images/pfp.png")}}" alt="profile picture" class="pfpimg">
+    <img src="{{url_for('static', filename = "images/Pen-icon.png")}}" alt="edit profile picture button" class="pfp-edit">
+  </div>
+  <div class="basic_info">
+    <h1 class="basic_name">{{firstname}} {{lastname}}</h1>
+    <p class ="basic_course">{{email}}</p>
+    <p class="basic_cont">{{phonenum}}</p>
+  </div>
+</article>
+
+<div class="content">
+  <section class="about_me1">
+    <form class="course_section">
+      <h1 class="aboutheader">Chosen course of study</h1>
+      <input required>
+      <span id="dots1"></span><span id="more1"></span>
+      <button type="submit">Save</button>
+    </form>
+
+    <form class="course_section">
+      <h1 class="aboutheader">Location</h1>
+      <input required>
+      <span id="dots1"></span><span id="more1"></span>
+      <button type="submit">Save</button>
+    </form>
+
+    <form class="skills_section">
+      <div class="icons">
+        <img src="{{url_for('static', filename = "images/Pen-icon.png")}}" alt="edit section">
+        <img src="{{url_for('static', filename = "images/plus_icon.png")}}" alt="add more to the section">
+      </div>
+      <h1 class="aboutheader">Skills</h1>   
+      <input required>
+      <span id="dots"></span><span id="more"></span>
+      <button type="submit">Save</button>
+    </form>
+
+    <form class="work_section">
+      <div class="icons">
+        <img src="{{url_for('static', filename = "images/Pen-icon.png")}}" alt="edit section">
+        <img src="{{url_for('static', filename = "images/plus_icon.png")}}" alt="add more to the section">
+      </div>
+      <h1 class="aboutheader">Work Experience</h1>
+      <input required>
+      <span id="dots1"></span><span id="more1"></span>
+      <button type="submit">Save</button>
+    </form>
+
+    <form class="work_section">
+      <div class="icons">
+        <img src="{{url_for('static', filename = "images/Pen-icon.png")}}" alt="edit section">
+        <img src="{{url_for('static', filename = "images/plus_icon.png")}}" alt="add more to the section">
+      </div>
+      <h1 class="aboutheader">Education</h1>
+      <input required>
+      <span id="dots3"></span><span id="more3"></span>
+      <button type="submit">Save</button>
+    </form>
+
+    <form class="hobbies_section">
+      <div class="icons">
+        <img src="{{url_for('static', filename = "images/Pen-icon.png")}}" alt="edit section">
+        <img src="{{url_for('static', filename = "images/plus_icon.png")}}" alt="add more to the section">
+      </div>
+      <h1 class="aboutheader">Hobbies and Interests</h1>
+      <input required>
+      <span id="dots2"></span><span id="more2"></span>
+      <button type="submit">Save</button>
+    </form>
+  </section>
+</div>
+
+<footer class="footer_container2">
+  <div class="footer-img">
+    <img src="{{url_for('static', filename="images/facebook.jpg")}}">
+    <img src="{{url_for('static', filename="images/instagram.png")}}">
+    <img src="{{url_for('static', filename="images/twitter.png")}}">
+    <img src="{{url_for('static', filename="images/youtube.png")}}">
+    </div>
+</footer>
+
+</body>
+
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</html>

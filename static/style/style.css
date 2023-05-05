@@ -1,0 +1,618 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+:root {
+    --main-color: #2d2d30;
+}
+
+body{
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #d9d8df;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    width: auto;
+    align-items: center;
+    padding: 30px, 10%;
+}
+
+.navbar li{
+    float: right;
+    font-family: Montserrat;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.nav_links a{
+    color: white;
+    text-decoration: none;
+    float: right;
+}
+
+.nav_links a:hover,a.active{
+    background: lightgray;
+    transition: .5s;
+    text-decoration: underline;
+    color: black;
+}
+
+.nav_links{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav_links li{
+    margin: 0 5px;
+}
+
+.logo{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.formlogo{
+    position: absolute;
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.signup_link a{
+    color: red;
+}
+
+.profile_viewer{
+    display: flex;
+    border-radius: 10px;
+    border: solid 3px #24252A;
+    background: rgb(129, 127, 127);
+    width: 98%;
+    height: 500px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.coverimg{
+    margin: auto;
+    border-radius: 10px;
+    max-height: 96%;
+    height: 500px;
+    width: 1050px;
+    max-width: 98%;
+    background: round;
+}
+
+.pfp_view{
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 3px solid white;
+    left: 10%;
+    top: 25%;
+    border-radius: 3px;
+}
+
+.pfpimg{
+    width: 250px;
+    height: 250px;
+}
+
+.pfp-edit{
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.pfp-edit:hover,pfp-edit:active{
+    transition: .3s;
+    transform: scale(1.1);
+    border-radius:10%;
+    background-color: rgb(80,80,255,0.2);
+}
+
+.basic_info2{
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+    max-width: 400px;
+    background-color: rgb(129, 127, 127,0.8);
+    border-radius: 10px;
+    border: 3px solid white;
+    width: 500px;
+}
+
+.basic_info{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    font-family: sans-serif;
+    max-width: 400px;
+}
+
+.basic_name{
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+.basic_course{
+    font-size: 1.5em;
+}
+
+.cameraimg{
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    top: 2em;
+    right: 2em;
+    cursor: pointer;
+    background: none;
+    color: orange;
+}
+
+.cameraimg:hover{
+    filter: hue-rotate(160deg);
+    transition: .3s;
+}
+
+.content{
+    display: inline-block;
+    font-family: Montserrat;
+    margin-left: 1em;
+    margin-bottom: 4em;
+}
+
+.profile{
+    float: right;
+}
+
+.aboutheader, .profilesheader{
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.about_me button{
+    padding: 6px;
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.about_me button:hover, .about_me button:active{
+    background-color: lightblue;
+    transition: .5s;
+}
+
+.about_me1 button{
+    background-color: rgb(238, 76, 76);
+    width: 8em;
+    height: 2.5em;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1em;
+}
+
+.about_me1 button:hover, .about_me button:active{
+    background-color: lightblue;
+    transition: .5s;
+}
+
+.content{
+    width: 96%;
+}
+
+.content img{
+    cursor: pointer;
+}
+
+.content img:hover,content img:active{
+    transition: .3s;
+    transform: scale(1.1);
+    border-radius:10%;
+    background-color: rgb(80,80,255,0.2);
+}
+
+.skills_section, .work_section, .hobbies_section{
+    background-color: white;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.course_section{
+    background-color: white;
+    padding-left: 1em;
+    padding-bottom: 1em;
+    margin-top: 1em;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.content input{
+    width: 96%;
+    font-size: 16px;
+    padding-bottom: 8em;
+    margin-bottom: 1em;
+    border: 2px solid black
+}
+
+.content input:nth-child(1), .content input:nth-child(2){
+    width: 96%;
+    font-size: 20px;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    border: 2px solid black
+}
+
+.signup_box{
+    background-color: white;
+    border: solid 2px gray;
+    border-radius: 10px;
+    padding: 2em 3em;
+    max-width: 300px;
+    margin-top: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: sans-serif;
+}
+
+.signup_box h1{
+    align-items: center;
+    text-align: center;
+    font-size: 1.8em;
+    text-decoration: underline;
+    font-family: Montserrat;
+}
+
+.signup_box h2{
+    font-size: 1em;
+}
+
+.form_login_link{
+    text-align: center;
+    font-family: Montserrat;
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.form_login_link a:hover, .form_login_link a:active{
+    color: red;
+}
+
+.input_box{
+    display: inline;
+    align-items: center;
+}
+
+.input_box input{
+    width: 100%;
+    height: 2em;
+    border-radius: 5px;
+    border: solid 1px gray;
+}
+
+.form_button{
+    text-align: center;
+    margin: 1em;
+}
+
+.signup_box button{
+    background-color: rgb(238, 76, 76);
+    width: 100%;
+    height: 3.5em;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1em;
+}
+
+.signup_box button:active, .signup_box button:hover{
+    background-color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.icons{
+    float: right;
+    display: inline;
+}
+
+.icons img{
+    height: 30px;
+    width: 30px;
+    padding: 8px;
+    margin-top: 0.8em;
+    margin-right: 8px;
+}
+
+.profilesheader{
+    font-family: Montserrat;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+
+.row{
+    display: flex;
+    box-sizing: border-box;
+    margin-right: -1em;
+    padding-bottom: 2em;
+}
+
+.row h3{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row h3:active, h3:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.card{
+    background-color: white;
+    border: solid 1px gray;
+    border-radius: 5px;
+    text-align: center;
+    padding: 1em;
+    cursor: pointer;
+    padding-bottom: 3em;
+    max-height: 70%;
+}
+
+.card:hover, .card:active{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.column img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.column{
+    min-width: 20%;
+    width: 24%;
+    padding: 0 5px;
+    float: left;
+    text-decoration: none;
+    color: black;
+}
+
+.row p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.footer_container{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+    width: auto;
+    padding: 1em;
+    justify-content: center;
+}
+
+.footer_container2{
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--main-color);
+    padding: 1em;
+    justify-content: center;
+    width: auto;
+    max-width: 1100px;
+}
+
+.footer_container2 img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer_container2 img:hover, .footer_container2 img:active{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.footer_container img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 1em;
+}
+
+.footer_container img:hover, .footer_container img:active{
+    cursor: pointer;
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+.search-section{
+    margin-top: 3em;
+    overflow: hidden;
+    padding-bottom: 3em;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.search{
+    width: 70%;
+}
+
+.search input{
+    display: flex;
+    width: 45%;
+    margin-left: 3em;
+    padding: 1em;
+    margin-top: 2.5em;
+    border-radius: 3px;
+    border: solid 1px gray;
+    font-size: 1em;
+}
+
+.search button{
+    margin-left: 3em;
+    margin-top: 2.5em;
+    padding: 1em;
+    width: 8em;
+    background-color: rgb(238, 76, 76);
+    height: 3.5em;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1em;
+}
+
+.search button:active, .search button:hover{
+    background-color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s;
+}
+
+
+.search h1{
+    font-size: 3em;
+    margin-left: 1em;
+    font-family: Montserrat;
+    text-decoration: underline;
+    margin-bottom: 1em;
+}
+
+.searchimg{
+    height: 360px;
+    width: 480px;
+    margin-top: -20em;
+    float: right;
+}
+
+.main_coverimg{
+    width: 100%;
+    height: 100%;
+    margin-top: 1em;
+}
+
+.main_header h1{
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 3em;
+    text-align: center;
+    font-family: Montserrat;
+}
+
+.main_header1 h1{
+    font-size: 3em;
+    width: 15em;
+    font-family: Montserrat;
+}
+
+.contact_header h1{
+    font-family: Montserrat;
+    font-size: 3em;
+}
+
+.contact_header {
+    text-align: center;
+    padding-top: 1em;
+}
+
+.contact_section{
+    margin: 2em;
+    font-family: Montserrat;
+    font-size: 1.2em;
+}
+
+.contact_row input{
+    width: 100%;
+    font-size: 1.2em;
+    border: 2px solid black;
+}
+
+.contact_row1 input{
+    border: 2px solid black;
+    width: 100%;
+    font-size: 1em;
+    padding-top: 0.5em;
+    padding-bottom: 10em;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.contact_button{
+    margin: 1em;
+    text-align: center;
+    margin-bottom: 3em;
+}
+
+.contact_button button{
+    background-color: rgb(238, 76, 76);
+    width: 10em;
+    height: 3.5em;
+    font-family: Montserrat;
+    color: white;
+    font-size: 1em;
+}
+
+.contact_button button:hover, .contact_button button:active{
+    background-color: red;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.features{
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin-bottom: 2em;
+}
+
+.features-header{
+    font-family: Montserrat;
+    padding: 8px;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 20px;
+}
+
+.features-list{
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-bottom: 1em;
+}
+
+.features-list li{
+    margin-bottom: 8px;
+}

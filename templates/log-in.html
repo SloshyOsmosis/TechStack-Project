@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="/static/style/style.css" rel="stylesheet" type="text/css">
+  <link rel="icon" href="{{url_for('static', filename = 'images/logo2.png')}}">
+  <script src="script.js"></script>
+  <title>Log-in form</title>
+</head>
+<body>
+
+
+  <header class="navbar">
+      <a onclick="Main()"><img src="{{url_for('static', filename="images/logo2.png")}}" alt="logo" class="logo"></a>
+      <nav>
+      <ul class="nav_links">
+          <li class="signup_link"><a href="{{url_for('login')}}">Log in</a></li>
+          <li class="signup_link"><a href="{{url_for('signup')}}">Sign up</a></li>
+          <li><a href="{{url_for('search')}}">Search</a></li>
+          <li><a href="{{url_for('contact')}}">Contact</a></li>
+          <li><a href="{{url_for('main')}}">Home</a></li>
+      </ul>
+      </nav>
+  </header>
+
+<form class="signup_box" action="/login" method="post">
+  <a onclick="Main()"><img src="{{url_for('static', filename="images/logo2.png")}}" alt="logo" class="formlogo"></a>
+    <div>
+      <h1>Login</h1>
+      </div>
+    <div class="input_box">
+      <h2>Email Address:</h2>
+      <input required type="email" name="email">
+    </div>
+    <div class="input_box">
+      <h2>Password:</h2>
+      <input type="password" required name="password">
+    </div>
+    <div class="form_button">
+      <button type="submit">Submit</button>
+    </div>
+    <div class="form_login_link">
+      <a onclick="Signup()">Don't have an account? Create an account here!</a>
+    </div>
+</form>
+
+<script src="{{url_for('static', filename='scripts/script.js')}}"></script>
+
+</body>
+</html>
